@@ -6,7 +6,7 @@ This system was developed as a part of my [PhD thesis](https://ltu.diva-portal.o
 First, you need to install [SuperCollider](https://supercollider.github.io/) and [SC3-Plugins](https://supercollider.github.io/sc3-plugins/).
 Then, open up a SuperCollider document and run the following line (by placing the cursor on that line and pressing cmd+rtn (Mac) or ctrl+rtn (Win/Linux):
 ```
-Quarks.install("https://github.com/mattiaspetersson/paragraph)
+Quarks.install("https://github.com/mattiaspetersson/paragraph")
 ```
 Wait for the installation to finish (watch the post window) and re-compile the class library (Language --> Recompile Class Library). The posts might tell you that you need to install kernels and matrices for the Ambisonics Toolkit (Atk). In this case, follow the instructions and run the following lines one by one and wait for the download to finish:
 ```
