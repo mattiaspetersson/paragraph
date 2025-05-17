@@ -4,6 +4,8 @@ This system was developed as a part of my [PhD thesis](https://ltu.diva-portal.o
 
 ## Installation
 First, you need to install [SuperCollider](https://supercollider.github.io/) and [SC3-Plugins](https://supercollider.github.io/sc3-plugins/).
+In order to use SuperCollider's Quarks package manager, you might also need to install Git. In this case, follow the instructions on the [Git WebPage](https://git-scm.com/downloads).
+You can check that the Quarks system works by selecting Quarks from the Language menu in SuperCollider. If the window is populated with packages it should work.
 Then, open up a SuperCollider document and run the following line (by placing the cursor on that line and pressing cmd+rtn (Mac) or ctrl+rtn (Win/Linux):
 ```
 Quarks.install("https://github.com/mattiaspetersson/paragraph")
