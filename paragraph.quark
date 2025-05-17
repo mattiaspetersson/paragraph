@@ -1,0 +1,10 @@
+(
+name: "paragraph",
+path: "paragraph",
+summary: "a live coding dialect for the generation of patterns",
+author:	"Mattias Petersson",
+version: 0.9,
+helpdoc: "paragraph-help/paragraph.html",
+dependencies: ["wslib", "atk-sc3", "Bjorklund", "https://github.com/shimpe/scstringext", "https://github.com/mattiaspetersson/empTriangle"],
+license: "GPL"
+)
