@@ -157,29 +157,6 @@ ParagraphSynthDefs { // release version
 					pluck!2;
 				},
 				[\plkFrq, \plkDcyTime]
-			],
-
-			repeater: [
-				{|input,
-					t_trig = 0, beatDurInSecs, rptVal = 4|
-					var phasor, rec, play, trigPos, buf, repeatValue;
-					buf = LocalBuf(SampleRate.ir * 4, 2);
-					phasor = Phasor.ar(0, BufRateScale.kr(buf), 0, BufFrames.kr(buf));
-					repeatValue = ((beatDurInSecs * 1) / 2.pow(rptVal.clip(1, 64))) * BufSampleRate.kr(buf); // fångar inte riktigt korta ljud..
-					trigPos = Latch.ar(phasor + repeatValue, t_trig); // phasors pos when triggered
-					rec = BufWr.ar(input, buf, phasor);
-					play = BufRd.ar(
-						2,
-						buf,
-						Phasor.ar(
-							0,
-							BufRateScale.kr(buf),
-							trigPos - repeatValue,
-							trigPos
-						)
-					);
-				},
-				[\rptVal]
 			]
 		);
 	}
