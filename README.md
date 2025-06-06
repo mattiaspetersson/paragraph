@@ -15,7 +15,7 @@ Wait for the installation to finish (watch the post window) and re-compile the c
 Atk.downloadKernels;
 Atk.downloadMatrices;
 ```
-Recompile the class libaray again, and unless you see some errors in the post window, you should be good to go.
+Recompile the class library again, and unless you see some errors in the post window, you should be good to go.
 
 ## Basic Usage
 Enter the Paragraph environment by typing and running
